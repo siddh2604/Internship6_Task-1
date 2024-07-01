@@ -1,0 +1,77 @@
+/* Blog.module.css */
+
+.blog {
+  padding: 50px 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.blog h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.blogPosts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.blogPost {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.blogPost:hover {
+  transform: translateY(-5px);
+}
+
+.blogPost img {
+  width: 100%; /* Ensure images take up full width of their container */
+  height: 250px; /* Set a fixed height to maintain consistent aspect ratio */
+  object-fit: cover; /* Ensure images cover the entire space */
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.blogPost h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.blogPost p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.blogPost a {
+  display: inline-block;
+  color: #4caf50;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.blogPost a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .blogPosts {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+
+  .blogPost img {
+    height: auto; /* Allow images to adjust height based on content */
+  }
+}
