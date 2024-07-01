@@ -1,0 +1,224 @@
+/* About Section */
+.about {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.missionVision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; /* Added gap between mission and vision sections */
+  margin-top: 40px;
+}
+
+.mission,
+.vision {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.mission h3,
+.vision h3,
+.values h3,
+.impact h3 {
+  color: #4caf50;
+}
+
+.values,
+.impact {
+  margin-top: 40px;
+}
+
+.values ul,
+.impact ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.values li,
+.impact li {
+  padding: 10px 0;
+}
+
+.values li::before,
+.impact li::before {
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  color: #4caf50;
+  padding-right: 10px;
+}
+
+/* Section Styles */
+.section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.service-cards,
+.testimonials-content,
+.blog-posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.service-card,
+.testimonial,
+.blog-post {
+  width: 30%;
+  margin: 20px 0;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.service-card img,
+.blog-post img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.service-card:hover,
+.blog-post:hover {
+  transform: translateY(-10px);
+}
+
+.testimonial p {
+  font-style: italic;
+}
+
+.testimonial h4 {
+  margin-top: 10px;
+  color: #555;
+}
+
+.blog-post a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.blog-post a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Form */
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#contact-form button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
+  background-color: #45a049;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav ul li {
+    width: 100%;
+    text-align: left;
+    margin: 10px 0;
+  }
+
+  .mission,
+  .vision {
+    width: 100%; /* Full width for mission and vision on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .missionVision {
+    grid-template-columns: 1fr; /* Single column layout for mission and vision */
+  }
+
+  .service-card,
+  .testimonial,
+  .blog-post {
+    width: 45%; /* Adjusted width for smaller screens */
+  }
+
+  .container {
+    align-items: center;
+  }
+
+  .hero {
+    padding: 100px 20px;
+  }
+
+  .section .container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-card,
+  .testimonial,
+  .blog-post {
+    width: 100%; /* Full width for cards on smallest screens */
+  }
+
+  .nav ul {
+    align-items: center;
+  }
+
+  .values ul,
+  .impact ul {
+    text-align: center;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+}

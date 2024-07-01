@@ -1,0 +1,55 @@
+/* Testimonials.module.css */
+
+.testimonials {
+  padding: 50px 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.testimonialsContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Adjust alignment */
+  gap: 30px;
+}
+
+.testimonial {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: calc(50% - 15px); /* Adjust width for two columns with gap */
+  max-width: 400px; /* Limit maximum width */
+}
+
+.testimonial p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.testimonial h4 {
+  font-size: 1.4rem;
+  color: #888;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .testimonial {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 30px; /* Add margin between stacked testimonials */
+  }
+}
